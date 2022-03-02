@@ -29,7 +29,7 @@
   "dependencies": {
     "clsx": "^1.1.1",
     "prism-react-renderer": "^1.2.1",
-    "rehype-katex": "5",
+    "rehype-katex": "6",
     "remark-math": "3"
   },
   "devDependencies": {
