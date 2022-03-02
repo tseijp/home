@@ -1,32 +1,51 @@
 {
-  "name": "react-mol-dodeca",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
-    "@react-three/drei": "8.3.1",
-    "@react-three/fiber": "7.0.24",
-    "@use-gesture/react": "10.2.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-mol": "2.2.2",
-    "react-scripts": "3.4.3",
-    "three": "0.124.0"
+    "clsx": "^1.1.1",
+    "prism-react-renderer": "^1.2.1",
+    "rehype-katex": "5",
+    "remark-math": "3"
   },
   "devDependencies": {
-    "typescript": "3.8.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "@docusaurus/core": "2.0.0-beta.16",
+    "@docusaurus/module-type-aliases": "2.0.0-beta.16",
+    "@docusaurus/preset-classic": "2.0.0-beta.16",
+    "@mdx-js/react": "^1.6.22",
+    "@react-three/drei": "^8.11.0",
+    "@react-three/fiber": "^7.0.26",
+    "@tsconfig/docusaurus": "^1.0.4",
+    "@types/three": "^0.137.0",
+    "@use-gesture/react": "^10.2.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-mol": "^2.2.2",
+    "three": "^0.138.0",
+    "typescript": "^4.5.2"
+  }
 }
