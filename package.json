@@ -30,23 +30,23 @@
     "clsx": "^1.1.1",
     "prism-react-renderer": "^1.2.1",
     "rehype-katex": "5",
-    "remark-math": "3"
+    "remark-math": "5"
   },
   "devDependencies": {
     "@docusaurus/core": "2.0.0-beta.17",
     "@docusaurus/module-type-aliases": "2.0.0-beta.17",
     "@docusaurus/preset-classic": "2.0.0-beta.17",
-    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/react": "^2.0.0",
     "@react-three/drei": "^8.11.0",
     "@react-three/fiber": "^7.0.26",
     "@tsconfig/docusaurus": "^1.0.4",
     "@types/three": "^0.137.0",
-    "@use-gesture/react": "^10.2.6",
+    "@use-gesture/react": "^10.2.7",
     "path-browserify": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-mol": "^2.2.2",
-    "three": "^0.138.0",
-    "typescript": "^4.5.2"
+    "three": "^0.138.2",
+    "typescript": "^4.6.2"
   }
 }
