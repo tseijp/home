@@ -3,8 +3,8 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const math = require('remark-math');
-const katex = require('rehype-katex');
+// const math = require('remark-math');
+// const katex = require('rehype-katex');
 const path = require('path');
 const isHome = !~path.resolve(__dirname).indexOf('tseijp');
 
@@ -33,11 +33,13 @@ const config = {
       : ({
         docs: {
           path: '../../packages/',
+          include: ['*.{md, mdx}', '*/*.{md, mdx}'],
           routeBasePath: 'packages',
           editUrl: 'https://github.com/tseijp/tseijp/tree/main/packages/',
         },
         blog: {
           path: '../../articles/',
+          include: ['*.{md, mdx}', '*/*.{md, mdx}'],
           routeBasePath: 'articles',
           showReadingTime: true,
           editUrl: 'https://github.com/tseijp/tseijp/tree/main/articles/',
@@ -51,6 +53,7 @@ const config = {
       {
         id: 'examples',
         path: '../../examples',
+        include: ['*.{md, mdx}', '*/*.{md, mdx}'],
         routeBasePath: 'examples',
       },
     ],

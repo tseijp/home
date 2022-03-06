@@ -33,10 +33,10 @@
     "remark-math": "5"
   },
   "devDependencies": {
-    "@docusaurus/core": "2.0.0-beta.16",
-    "@docusaurus/module-type-aliases": "2.0.0-beta.16",
-    "@docusaurus/preset-classic": "2.0.0-beta.16",
-    "@mdx-js/react": "^2.0.0",
+    "@docusaurus/core": "2.0.0-beta.17",
+    "@docusaurus/module-type-aliases": "2.0.0-beta.17",
+    "@docusaurus/preset-classic": "2.0.0-beta.17",
+    "@mdx-js/react": "^1.6.22",
     "@react-three/drei": "^8.11.0",
     "@react-three/fiber": "^7.0.26",
     "@tsconfig/docusaurus": "^1.0.4",
