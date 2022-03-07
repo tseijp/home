@@ -5,7 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // const math = require('remark-math');
 // const katex = require('rehype-katex');
-const path = require('path');
+const path = require('path-browserify');
 const isHome = !~path.resolve(__dirname).indexOf('tseijp');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -27,6 +27,8 @@ const config = {
           path: 'documents/',
           routeBasePath: 'documents',
           editUrl: 'https://github.com/tseijp/home/tree/main/documents/',
+          // remarkPlugins: [math],
+          // rehypePlugins: [katex],
         }
       })
       /** @type {import('@docusaurus/preset-classic').Options} */
@@ -36,6 +38,8 @@ const config = {
           include: ['*.{md, mdx}', '*/*.{md, mdx}'],
           routeBasePath: 'packages',
           editUrl: 'https://github.com/tseijp/tseijp/tree/main/packages/',
+          // remarkPlugins: [math],
+          // rehypePlugins: [katex],
         },
         blog: {
           path: '../../articles/',
@@ -43,6 +47,8 @@ const config = {
           routeBasePath: 'articles',
           showReadingTime: true,
           editUrl: 'https://github.com/tseijp/tseijp/tree/main/articles/',
+          // remarkPlugins: [math],
+          // rehypePlugins: [katex],
         },
       }),
     ],
@@ -58,14 +64,14 @@ const config = {
       },
     ],
   ],
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
-    },
-  ],
+  // stylesheets: [
+  //   {
+  //     href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+  //     type: 'text/css',
+  //     integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+  //     crossorigin: 'anonymous',
+  //   },
+  // ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
