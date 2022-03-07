@@ -5,8 +5,8 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // const math = require('remark-math');
 // const katex = require('rehype-katex');
-const path = require('path-browserify');
-const isHome = !~path.resolve(__dirname).indexOf('tseijp');
+const isHome = process.env.IS_HOME !== "0"
+// const isHome = !~path.resolve(__dirname).indexOf('tseijp');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {

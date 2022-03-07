@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start:root": "cross-env IS_HOME=0 docusaurus start",
+    "build:root": "cross-env IS_HOME=0 docusaurus build",
+    "serve:root": "cross-env IS_HOME=0 docusaurus serve",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -42,7 +45,7 @@
     "@tsconfig/docusaurus": "^1.0.4",
     "@types/three": "^0.137.0",
     "@use-gesture/react": "^10.2.7",
-    "path-browserify": "^1.0.1",
+    "cross-env": "^7.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-mol": "^2.2.2",
