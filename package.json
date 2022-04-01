@@ -36,7 +36,7 @@
     "remark-math": "5"
   },
   "devDependencies": {
-    "@docusaurus/core": "2.0.0-beta.17",
+    "@docusaurus/core": "2.0.0-beta.18",
     "@docusaurus/module-type-aliases": "2.0.0-beta.18",
     "@docusaurus/preset-classic": "2.0.0-beta.18",
     "@mdx-js/react": "1.6.22",
