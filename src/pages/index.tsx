@@ -1,12 +1,19 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import Head from '@docusaurus/Head'
 import Layout from '@theme/Layout';
-import { Text } from "@react-three/drei";
-import { useMove } from "@use-gesture/react";
-import { Instanced, Flow } from "react-mol";
+import { Text } from '@react-three/drei';
+import { useMove } from '@use-gesture/react';
+import { Instanced, Flow } from 'react-mol';
 import { Canvas, useFrame } from "@react-three/fiber";
 import type { DocusaurusConfig } from '@docusaurus/types';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 const { sin, cos, random } = Math;
+
+function range(n = 0) {
+  const ret = new Array(n);
+  for (; n--; ) ret[n] = n;
+  return ret;
+}
 
 const position = (t = 0, s = 0, x = 0, y = 0, z = 0) => [
   (x - 0.5 - cos(t * s + x) - sin((t * s) / 1)) * (x * 100 + 50),
@@ -14,7 +21,7 @@ const position = (t = 0, s = 0, x = 0, y = 0, z = 0) => [
   (z - 0.5 - cos(t * s + z) - sin((t * s) / 5)) * (z * 100 + 50)
 ];
 
-const rotation = (t = 0, s = 0) => Array(3).fill(cos(t * s) * 5);
+const rotation = (t = 0, s = 0) => range(3).fill(cos(t * s) * 5);
 
 function Group() {
   const move = React.useRef({ x: 0, y: 0 });
@@ -32,12 +39,12 @@ function Group() {
   return (
     <Instanced>
       <dodecahedronBufferGeometry args={[1, 0]} />
-      <meshStandardMaterial />
-      {[...Array(1000)].map((_, i) => (
+      <meshStandardMaterial color="#2e2e2e" />
+      {range(1000).map((i) => (
         <Flow
           key={i}
           color="black"
-          args={[...Array(4)].map(random)}
+          args={range(4).map(random)}
           position={position as any}
           rotation={rotation as any}
           scale={rotation as any}
@@ -56,19 +63,23 @@ export default function App (props: {config: DocusaurusConfig}) {
           {siteConfig.title} {siteConfig.titleDelimiter} {siteConfig.tagline}
         </title>
       </Head>
-      <Canvas camera={[0, 0, 5] as any} style={{ top: 0, left: 0, zIndex: -1, position: "absolute" }}>
-        <ambientLight intensity={0.3} />
-        <color attach="background" args={["#212121"]} />
-        <gridHelper position={[0, 0, 0]} args={[100, 50]} />
-        <pointLight position={[100, 100, 100]} intensity={2.2} />
-        <pointLight position={[-100, -100, -100]} intensity={5} />
-        <Group />
-        <Suspense fallback={null}>
-          <Text color={"#e2e2e2"} fontSize={2} lineHeight={2}>
-            TSEI.JP
-          </Text>
-        </Suspense>
-      </Canvas>
+      <BrowserOnly>
+        {() =>
+          <Canvas camera={[0, 0, 5] as any} style={{ top: 0, left: 0, zIndex: -1, position: "absolute" }}>
+            <ambientLight intensity={0.3} />
+            <color attach="background" args={["#212121"]} />
+            <gridHelper position={[0, 0, 0]} args={[100, 50]} />
+            <pointLight position={[100, 100, 100]} intensity={2.2} />
+            <pointLight position={[-100, -100, -100]} intensity={5} />
+            <React.Suspense fallback={null}>
+              <Group />
+              <Text color={"#e2e2e2"} fontSize={2} lineHeight={2}>
+                TSEI.JP
+              </Text>
+            </React.Suspense>
+          </Canvas>
+        }
+      </BrowserOnly>
     </Layout>
   );
 }

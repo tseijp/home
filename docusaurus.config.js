@@ -87,7 +87,7 @@ const config = {
         items: [
           { position: 'left', label: 'Articles' , to: '/articles/' },
           { position: 'left', label: 'Examples', to: '/examples/' },
-          { position: 'left', label: 'Packages', type: 'doc', docId: 'README' },
+          { position: 'left', label: 'Packages', to: '/packages/' },
           { position: 'right', label: 'GitHub', href: 'https://github.com/tseijp/tseijp' },
         ],
       },

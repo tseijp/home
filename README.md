@@ -1,5 +1,15 @@
 # 👀 home
 
+<div align="center">
+  <h6>
+    home page in
+    <a href="https://tsei.jp/">tsei.jp</a>
+  </h6>
+  <a href="https://tsei.jp/">
+    <img src="https://i.imgur.com/Qk3OD3R.gif" width="600" alt="👀" />
+  </a>
+</div>
+
 ## Getting Started
 
 This website is built using [Docusaurus 2](https://docusaurus.io/),
