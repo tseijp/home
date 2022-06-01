@@ -41,7 +41,7 @@
     "@docusaurus/preset-classic": "2.0.0-beta.18",
     "@mdx-js/react": "1.6.22",
     "@react-three/drei": "^8.20.2",
-    "@react-three/fiber": "^7.0.27",
+    "@react-three/fiber": "^7.0.29",
     "@tsconfig/docusaurus": "^1.0.5",
     "@types/three": "^0.139.0",
     "@use-gesture/react": "^10.2.12",
