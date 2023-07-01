@@ -42,7 +42,7 @@
     "@mdx-js/react": "1.6.22",
     "@react-three/drei": "^8.20.2",
     "@react-three/fiber": "^7.0.29",
-    "@tsconfig/docusaurus": "^1.0.7",
+    "@tsconfig/docusaurus": "^2.0.0",
     "@types/three": "^0.149.0",
     "@use-gesture/react": "^10.2.27",
     "cross-env": "^7.0.3",
