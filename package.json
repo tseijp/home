@@ -30,7 +30,7 @@
     ]
   },
   "dependencies": {
-    "clsx": "^1.2.1",
+    "clsx": "^2.0.0",
     "prism-react-renderer": "^2.0.6",
     "rehype-katex": "5",
     "remark-math": "5"
