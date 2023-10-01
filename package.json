@@ -33,7 +33,7 @@
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.0.6",
     "rehype-katex": "7",
-    "remark-math": "5"
+    "remark-math": "6"
   },
   "devDependencies": {
     "@docusaurus/core": "2.4.3",
