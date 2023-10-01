@@ -32,7 +32,7 @@
   "dependencies": {
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.0.6",
-    "rehype-katex": "5",
+    "rehype-katex": "7",
     "remark-math": "5"
   },
   "devDependencies": {
