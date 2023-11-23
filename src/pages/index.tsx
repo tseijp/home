@@ -38,7 +38,7 @@ function Group() {
 
   return (
     <Instanced>
-      <dodecahedronBufferGeometry args={[1, 0]} />
+      <dodecahedronGeometry args={[1, 0]} />
       <meshStandardMaterial color="#2e2e2e" />
       {range(1000).map((i) => (
         <Flow

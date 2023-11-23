@@ -31,25 +31,23 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
-    "prism-react-renderer": "^2.1.0",
-    "rehype-katex": "7",
-    "remark-math": "6"
+    "prism-react-renderer": "2.1.0"
   },
   "devDependencies": {
-    "@docusaurus/core": "2.4.3",
+    "@docusaurus/core": "3.0.0",
     "@docusaurus/module-type-aliases": "3.0.0",
-    "@docusaurus/preset-classic": "2.4.3",
-    "@mdx-js/react": "1.6.22",
-    "@react-three/drei": "^8.20.2",
-    "@react-three/fiber": "^7.0.29",
-    "@tsconfig/docusaurus": "^2.0.2",
-    "@types/three": "^0.155.0",
+    "@docusaurus/preset-classic": "3.0.0",
+    "@docusaurus/tsconfig": "3.0.0",
+    "@mdx-js/react": "3.0.0",
+    "@react-three/drei": "9.88.17",
+    "@react-three/fiber": "8.15.11",
+    "@types/three": "0.158.3",
     "@use-gesture/react": "^10.3.0",
     "cross-env": "^7.0.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-mol": "^2.2.2",
-    "three": "^0.158.0",
+    "three": "0.158.0",
     "typescript": "^5.2.2"
   }
 }
