@@ -1,4 +1,4 @@
-# 👀@tsei/home
+# 👀home
 
 <div align="center">
   <h6>
@@ -6,7 +6,7 @@
     <a href="https://tsei.jp/">tsei.jp</a>
   </h6>
   <a href="https://tsei.jp/">
-    <img src="https://i.imgur.com/Qk3OD3R.gif" width="600" alt="👀" />
+    <img alt="👀" width="600px" src="https://i.imgur.com/Qk3OD3R.gif" />
   </a>
 </div>
 
