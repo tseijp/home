@@ -8,6 +8,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import type { DocusaurusConfig } from '@docusaurus/types';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 const { sin, cos, random } = Math;
+import "./styles.css"
 
 function range(n = 0) {
   const ret = new Array(n);

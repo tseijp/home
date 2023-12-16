@@ -82,12 +82,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'TSEi.jp',
+        title: 'TSEI.jp',
         logo: { alt: ' ', src: 'img/favicon.png' },
         items: [
           { position: 'left', label: 'Articles' , to: '/articles/' },
           { position: 'left', label: 'Examples', to: '/examples/' },
           { position: 'left', label: 'Packages', to: '/packages/' },
+          { position: 'right', label: 'Twitter', href: 'https://twitter.com/tseijp/' },
+          { position: 'right', label: 'Youtube', href: 'https://www.youtube.com/channel/UCvsm_E5chN4icoiulsBD9nw' },
           { position: 'right', label: 'GitHub', href: 'https://github.com/tseijp/tseijp' },
         ],
       },
