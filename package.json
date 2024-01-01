@@ -30,7 +30,7 @@
     ]
   },
   "dependencies": {
-    "clsx": "^2.0.0",
+    "clsx": "^2.1.0",
     "prism-react-renderer": "2.3.1"
   },
   "devDependencies": {
