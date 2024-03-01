@@ -41,13 +41,13 @@
     "@mdx-js/react": "3.0.0",
     "@react-three/drei": "9.97.0",
     "@react-three/fiber": "8.15.16",
-    "@types/three": "0.160.0",
+    "@types/three": "0.162.0",
     "@use-gesture/react": "^10.3.0",
     "cross-env": "^7.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-mol": "^2.2.2",
-    "three": "0.161.0",
+    "three": "0.162.0",
     "typescript": "^5.3.3"
   }
 }
