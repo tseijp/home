@@ -48,6 +48,6 @@
     "react-dom": "18.2.0",
     "react-mol": "^2.2.2",
     "three": "0.162.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   }
 }
