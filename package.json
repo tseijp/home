@@ -37,7 +37,7 @@
     "@docusaurus/core": "3.2.0",
     "@docusaurus/module-type-aliases": "3.1.1",
     "@docusaurus/preset-classic": "3.2.0",
-    "@docusaurus/tsconfig": "3.1.1",
+    "@docusaurus/tsconfig": "3.2.0",
     "@mdx-js/react": "3.0.0",
     "@react-three/drei": "9.99.5",
     "@react-three/fiber": "8.15.16",
