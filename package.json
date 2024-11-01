@@ -39,7 +39,7 @@
     "@docusaurus/preset-classic": "3.5.2",
     "@docusaurus/tsconfig": "3.5.2",
     "@mdx-js/react": "3.0.0",
-    "@react-three/drei": "9.114.0",
+    "@react-three/drei": "9.115.0",
     "@react-three/fiber": "8.17.10",
     "@types/three": "0.169.0",
     "@use-gesture/react": "^10.3.1",
