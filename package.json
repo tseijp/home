@@ -36,7 +36,7 @@
   "devDependencies": {
     "@docusaurus/core": "3.6.3",
     "@docusaurus/module-type-aliases": "3.5.2",
-    "@docusaurus/preset-classic": "3.5.2",
+    "@docusaurus/preset-classic": "3.6.3",
     "@docusaurus/tsconfig": "3.6.3",
     "@mdx-js/react": "3.0.0",
     "@react-three/drei": "9.115.0",
