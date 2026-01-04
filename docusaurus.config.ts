@@ -42,7 +42,7 @@ const getPlugins = () => {
                         {
                                 id: 'examples',
                                 path: '../../examples',
-                                include: ['*.{md,mdx}', '*/*.{md,mdx}', '*/*/*.{md,mdx}', '2023/*/README.md', '2024/*/README.md', '2025/*/README.md'],
+                                include: ['*.{md,mdx}', '*/*.{md,mdx}', '*/*/*.{md,mdx}', '2023/*/README.md', '2021/*/README.md', '2022/*/README.md', '2024/*/README.md', '2025/*/README.md'],
                                 exclude: ['**/node_modules/**/*'],
                                 routeBasePath: 'examples',
                         },
