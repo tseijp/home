@@ -58,7 +58,11 @@ const config: Config = {
         favicon: 'img/favicon.png',
         future: { v4: true },
         onBrokenLinks: 'warn',
-        onBrokenMarkdownLinks: 'warn',
+        markdown: {
+                hooks: {
+                        onBrokenMarkdownLinks: 'warn',
+                },
+        },
         organizationName: 'tseijp',
         projectName: 'tseijp',
         presets: getPresets(),
