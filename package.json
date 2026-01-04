@@ -1,53 +1,53 @@
 {
-  "name": "website",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start:root": "cross-env IS_HOME=0 docusaurus start",
-    "build:root": "cross-env IS_HOME=0 docusaurus build",
-    "serve:root": "cross-env IS_HOME=0 docusaurus serve",
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "prism-react-renderer": "2.4.1"
-  },
-  "devDependencies": {
-    "@docusaurus/core": "3.6.3",
-    "@docusaurus/module-type-aliases": "3.6.3",
-    "@docusaurus/preset-classic": "3.6.3",
-    "@docusaurus/tsconfig": "3.6.3",
-    "@mdx-js/react": "3.0.0",
-    "@react-three/drei": "9.120.5",
-    "@react-three/fiber": "8.17.10",
-    "@types/three": "0.169.0",
-    "@use-gesture/react": "^10.3.1",
-    "cross-env": "^7.0.3",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-mol": "^2.2.2",
-    "three": "0.172.0",
-    "typescript": "^5.7.2"
-  }
+        "name": "website",
+        "version": "0.0.0",
+        "private": true,
+        "scripts": {
+                "start:root": "cross-env IS_HOME=0 docusaurus start",
+                "build:root": "cross-env IS_HOME=0 docusaurus build",
+                "serve:root": "cross-env IS_HOME=0 docusaurus serve",
+                "docusaurus": "docusaurus",
+                "start": "docusaurus start",
+                "build": "docusaurus build",
+                "swizzle": "docusaurus swizzle",
+                "deploy": "docusaurus deploy",
+                "clear": "docusaurus clear",
+                "serve": "docusaurus serve",
+                "write-translations": "docusaurus write-translations",
+                "write-heading-ids": "docusaurus write-heading-ids",
+                "typecheck": "tsc"
+        },
+        "browserslist": {
+                "production": [
+                        ">0.5%",
+                        "not dead",
+                        "not op_mini all"
+                ],
+                "development": [
+                        "last 1 chrome version",
+                        "last 1 firefox version",
+                        "last 1 safari version"
+                ]
+        },
+        "dependencies": {
+                "clsx": "^2.1.1",
+                "prism-react-renderer": "2.4.1"
+        },
+        "devDependencies": {
+                "@docusaurus/core": "3.9.2",
+                "@docusaurus/module-type-aliases": "3.9.2",
+                "@docusaurus/preset-classic": "3.9.2",
+                "@docusaurus/tsconfig": "3.9.2",
+                "@mdx-js/react": "3.1.1",
+                "@react-three/drei": "9.120.5",
+                "@react-three/fiber": "8.17.10",
+                "@types/three": "0.169.0",
+                "@use-gesture/react": "^10.3.1",
+                "cross-env": "10.1.0",
+                "react": "18.3.1",
+                "react-dom": "18.3.1",
+                "react-mol": "^2.2.2",
+                "three": "0.172.0",
+                "typescript": "^5.7.2"
+        }
 }
