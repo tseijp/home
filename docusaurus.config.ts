@@ -1,56 +1,49 @@
-import { themes as prismThemes } from 'prism-react-renderer'
 import type { Config } from '@docusaurus/types'
-import type * as Preset from '@docusaurus/preset-classic'
 
 // const lightCodeTheme = require('prism-react-renderer/themes/github');
 // const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // const math = require('remark-math');
 // const katex = require('rehype-katex');
 
-const isHome = process.env.IS_HOME !== '0'
-// const isHome = !~path.resolve(__dirname).indexOf('tseijp');
-
 const getPresets = () => {
-        if (isHome)
-                return {
-                        docs: {
-                                path: 'documents/',
-                                routeBasePath: 'documents',
-                                editUrl: 'https://github.com/tseijp/home/tree/main/documents/',
+        return [
+                [
+                        'classic',
+                        {
+                                docs: {
+                                        path: '../../packages/',
+                                        include: ['*/*.{md,mdx}'],
+                                        exclude: ['**/node_modules/**/*'],
+                                        routeBasePath: 'packages',
+                                        editUrl: 'https://github.com/tseijp/tseijp/tree/main/packages/',
+                                },
+                                blog: {
+                                        path: '../../articles/',
+                                        include: ['*.{md, mdx}'],
+                                        exclude: ['**/node_modules/**/*'],
+                                        routeBasePath: 'articles',
+                                        blogTitle: 'Articles',
+                                        blogDescription: 'TSEI articles',
+                                        blogSidebarCount: 'ALL',
+                                        blogSidebarTitle: 'All posts',
+                                        postsPerPage: 10,
+                                        showReadingTime: false,
+                                        editUrl: 'https://github.com/tseijp/tseijp/tree/main/articles/',
+                                },
                         },
-                }
-        return {
-                docs: {
-                        path: '../../packages/',
-                        include: ['*.{md, mdx}', '*/*.{md, mdx}'],
-                        routeBasePath: 'packages',
-                        editUrl: 'https://github.com/tseijp/tseijp/tree/main/packages/',
-                },
-                blog: {
-                        path: '../../articles/',
-                        include: ['*.{md, mdx}', '*/*.{md, mdx}'],
-                        routeBasePath: 'articles',
-                        blogTitle: 'Articles',
-                        blogDescription: 'TSEI articles',
-                        blogSidebarCount: 'ALL',
-                        blogSidebarTitle: 'All posts',
-                        postsPerPage: 10,
-                        showReadingTime: false,
-                        editUrl: 'https://github.com/tseijp/tseijp/tree/main/articles/',
-                },
-        }
+                ],
+        ]
 }
 
 const getPlugins = () => {
-        if (isHome) return []
         return [
                 [
                         '@docusaurus/plugin-content-docs',
                         {
                                 id: 'examples',
                                 path: '../../examples',
-                                include: ['*.{md, mdx}', '*/*.{md, mdx}'],
-                                exclude: ['node_modules/**/*'],
+                                include: ['*/README.{md,mdx}', '*/*/README.{md,mdx}', '/*/*/README.{md,mdx}'],
+                                exclude: ['**/node_modules/**/*'],
                                 routeBasePath: 'examples',
                         },
                 ],
@@ -68,7 +61,7 @@ const config: Config = {
         onBrokenMarkdownLinks: 'warn',
         organizationName: 'tseijp',
         projectName: 'tseijp',
-        presets: [['classic', getPresets()]],
+        presets: getPresets(),
         plugins: getPlugins(),
         themeConfig: {
                 navbar: {
