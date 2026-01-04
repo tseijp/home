@@ -12,14 +12,14 @@ const getPresets = () => {
                         {
                                 docs: {
                                         path: '../../packages/',
-                                        include: ['*/*.{md,mdx}'],
+                                        include: ['*.{md,mdx}', '*/*.{md,mdx}', 'archive/*/*.{md,mdx}'],
                                         exclude: ['**/node_modules/**/*'],
                                         routeBasePath: 'packages',
                                         editUrl: 'https://github.com/tseijp/tseijp/tree/main/packages/',
                                 },
                                 blog: {
                                         path: '../../articles/',
-                                        include: ['*.{md, mdx}'],
+                                        include: ['*.{md, mdx}', '*/*.{md, mdx}'],
                                         exclude: ['**/node_modules/**/*'],
                                         routeBasePath: 'articles',
                                         blogTitle: 'Articles',
@@ -42,7 +42,7 @@ const getPlugins = () => {
                         {
                                 id: 'examples',
                                 path: '../../examples',
-                                include: ['*/README.{md,mdx}', '*/*/README.{md,mdx}', '/*/*/README.{md,mdx}'],
+                                include: ['*.{md,mdx}', '*/*.{md,mdx}', '*/*/*.{md,mdx}', '2023/*/README.md', '2024/*/README.md', '2025/*/README.md'],
                                 exclude: ['**/node_modules/**/*'],
                                 routeBasePath: 'examples',
                         },
